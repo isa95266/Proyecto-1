@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
 .datos{
  position: relative;
   flex: 1 1 250px; /* mínimo 250px, luego se adapta */
-  max-width: 400px;
+  max-width: 440px;
   height: 300px;
   background-color: #c8c398ec;
   margin: 10px;
