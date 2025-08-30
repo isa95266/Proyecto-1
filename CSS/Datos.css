@@ -1,0 +1,160 @@
+header {
+  background-color: #8e0d0d;
+  color: white;
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 8px 5px rgba(135, 9, 0, 0.296);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ⬅️ logo a la izq, título en medio */
+  padding: 0 20px;
+}
+
+/* contenedor para círculo + logo */
+.logo-container {
+  position: relative; /* importante para posicionar el círculo detrás */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;  /* tamaño fijo */
+  height: 60px;
+}
+
+.circulo {
+  position: absolute;  /* queda detrás del logo */
+  width: 50px;
+  height: 50px;
+  background-color: rgb(48, 104, 152);
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centra el círculo */
+  z-index: 0; /* debajo */
+}
+
+.logo {
+  position: relative;
+  width: 50px;
+  height: auto;
+  z-index: 1; /* encima del círculo */
+}
+
+.logo2-container {
+  position: relative; /* importante para posicionar el círculo detrás */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;  /* tamaño fijo */
+  height: 60px;
+  padding-right: 40px;
+}
+.circulo2 {
+  position: absolute;  /* queda detrás del logo */
+  width: 50px;
+  height: 50px;
+  background-color: rgb(175, 191, 0);
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -55%); /* centra el círculo */
+  z-index: 0; /* debajo */
+}
+
+
+.logo2 {
+  position: relative;
+  width: 50px;
+  height: auto;
+  z-index: 1; /* encima del círculo */
+}
+.titulo {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 24px;  
+   font-weight: bold;
+}
+
+body{
+      margin: 40px;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* centra todo en horizontal */
+      justify-content: center;
+      min-height: 70vh;
+      background: #f5efba;
+     margin-top:160px;
+     overflow: auto;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.contenedor{
+
+  background-color: rgba(255, 255, 255, 0);
+    position: relative;
+  display: flex;            /* ✅ CORRECTO */
+  flex-wrap: wrap;          /* permite que los bloques bajen si no hay espacio */
+  justify-content: center;  /* centra horizontalmente */
+  align-items: center;      /* centra verticalmente */
+  gap: 20px;                /* espacio entre los bloques */
+  min-height: 300px;
+  width:90%;
+
+}
+
+/* ✅ Responsive: en pantallas chicas se apilan */
+@media (max-width: 768px) {
+  .contenedor{
+    flex-direction: column;
+  }}
+.foto{
+ position: relative;
+  flex: 1 1 250px; /* mínimo 250px, luego se adapta */
+  max-width: 300px;
+  height: 300px;
+  background-color: #00000000;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.datos{
+ position: relative;
+  flex: 1 1 250px; /* mínimo 250px, luego se adapta */
+  max-width: 400px;
+  height: 300px;
+  background-color: #c8c398ec;
+  margin: 10px;
+  box-shadow: 0px 8px 5px #a8a270;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 120px;
+}
+.datos h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #970000b7;
+}
+.datos h4{
+   color: #530202b7;
+}
+/* Footer y texto mensaje */
+footer {
+  margin: 30px auto 0px auto;
+  width: 80%;
+  height: 100px;
+  background-color: rgb(255, 220, 176);
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
